@@ -1,0 +1,136 @@
+/*
+	Referencias: 
+	
+	Página de donde se sacó el logo: https://rciminternet.com/solucion-no-cumples-los-requisitos-para-crear-un-nombre-de-usuario/
+
+	1. https://www.youtube.com/watch?v=Q-PubOTNOsA&t=794s&ab_channel=Aulaideal
+	2. Página de donde se obtuvo el font-family del logo: https://www.designyourway.net/blog/typography/what-font-does-facebook-use/#:~:text=It%20uses%20Helvetica%20or%20Arial,identified%20by%20the%20style%20sheet.
+	3. https://www.youtube.com/watch?v=x8kOLCo9PZU&ab_channel=CarlosValdesWeb
+	4. https://www.youtube.com/watch?v=ko7Rn8fNDAo&ab_channel=piccelRD
+	5. https://www.youtube.com/watch?v=8MGmEztqHo8&ab_channel=WCODEV
+	6. Polígono derecha línea horizontal: https://bennettfeely.com/clippy/
+	7. Esquinas bordeadas: https://www.youtube.com/watch?v=vn41-lpnjNM&ab_channel=WebZone
+*/
+
+/*Propiedades del body.*/
+body{
+	background: #3b5998; 	 /*Color del fondo*/
+	display: grid;		 	 /*Display de grilla*/
+	justify-content: center; /*Justificado al centro de la página*/
+	align-items: center;	 /*Centrado de la página hacia el centro*/
+	min-height: 10vh;
+}
+
+/*Cuadrado del logo de facebook*/
+.cuadrado{
+
+	width: 200px;			/*Ancho de 200 pixeles*/
+	height: 200px;   		/*Alto de 200 pixeles*/
+	background: white;      /*Color de fondo: blanco*/
+	border-radius: 10px;    /*Radio de las esquinas de 10px*/
+	position: relative;     /*Posición relativa, para que no haya conflicto con los posicionamientos*/
+	top: 10px;				/*Se bajó 10 pixeles la imagen para que no haya problema*/
+	left: 60px;				/*Posición de 60 pixeles de izquierda a derecha*/
+}
+
+/*Propiedades del título h1*/
+.titulo{
+	color: white; 			/*Color de la letra*/
+	font-family: 'Tahoma';  /*Fuente de la familia. En este caso, se usará Tahoma, porque Facebook lo usa así*/
+	font-size: 35px;		/*El tamaño de la letra es 35px, pues es como mejor se parece al logo encontrado*/
+	position: relative;     /*Posición relativa*/
+	flex-direction: column; /*Direccionamiento en forma de columna para que se pueda poner abajo del logo sin ningún problema*/
+	position: relative;		/*Posición relativa para que no haya problema*/
+}
+
+/*
+Referencia de como hacer un cuadrado en html y css: https://www.youtube.com/watch?v=8MGmEztqHo8&ab_channel=WCODEV
+*/
+
+/*Primer cuadrado*/
+.uno{
+	background-color: #3b5998;	 		/*Color de la letra*/
+	position: absolute; 	/*Posición absoluta con respecto al cuadrado para que pueda encajar en el cuadrado del logo*/
+	width: 35px; 
+	height: 50px; 
+	/*flex-direction: relative;*/	
+	top: 166px;			/*Posición desde arriba hasta abajo. En este caso se puso negativo para que cupiera en el cuadrado*/
+	left: 90px;				/*Posición desde la izquierda hasta la derecha*/
+}
+
+/*Segundo cuadrado*/
+.dos{
+	background-color: #3b5998;	 		/*Color de la letra*/
+	position: absolute; 				/*Posición absoluta con respecto al cuadrado para que pueda encajar en el cuadrado del logo*/
+	width: 35px; 
+	height: 50px; 
+	/*flex-direction: relative;*/	
+	top: 140px;							/*Posición desde arriba hasta abajo. En este caso se puso negativo para que cupiera en el cuadrado*/
+	left: 90px;							/*Posición desde la izquierda hasta la derecha*/
+}
+
+/*Tercer cuadrado*/
+.tres{
+	background-color: #3b5998;	 		/*Color de la letra*/
+	position: absolute; 				/*Posición absoluta con respecto al cuadrado para que pueda encajar en el cuadrado del logo*/
+	width: 35px; 
+	height: 50px; 
+	/*flex-direction: relative;*/	
+	top: 100px;							/*Posición desde arriba hasta abajo. En este caso se puso negativo para que cupiera en el cuadrado*/
+	left: 90px;							/*Posición desde la izquierda hasta la derecha*/
+}
+
+/*Cuarto cuadrado*/
+.cuatro{
+	top: 100px;							/*Posición desde arriba hasta abajo. En este caso se puso negativo para que cupiera en el cuadrado*/
+	left: 110px;						/*Posición desde la izquierda hasta la derecha*/
+	width: 60px; 						/*Ancho de la pieza*/
+	height: 35px; 						/*Alto de la pieza*/
+	position: absolute;					/*Posición absoluta con respecto al padre*/		
+	background-color: #3b5998;	 		/*Color de la letra*/
+	clip-path: polygon(0 0, 70% 0, 63% 100%, 0% 100%); /*Polígono para la parte derecha del palo horizontal de la F.*/
+}
+
+/*Quinto cuadrado*/
+/*Parte izquierda de la línea horizontal de la F.*/
+.cinco{
+	top: 100px;							/*Posición desde arriba hasta abajo. En este caso se puso negativo para que cupiera en el cuadrado*/
+	left: 65px;							/*Posición desde la izquierda hasta la derecha*/
+	width: 35px; 						/*Ancho de la pieza*/
+	height: 35px; 						/*Altura de la pieza*/
+	position: absolute;					/*Posición absoluta con respecto al padre*/
+	background-color: #3b5998;	 		/*Color de la letra*/
+}
+
+/*Parte de arriba de la F*/
+/*Sexto cuadrado*/
+.seis{
+	top: 70px;							/*Posición desde arriba hasta abajo. En este caso se puso negativo para que cupiera en el cuadrado*/
+	left: 90px;							/*Posición desde la izquierda hasta la derecha*/
+	width: 35px; 						/*Ancho de la pieza*/
+	height: 35px; 						/*Altura de la pieza*/
+	position: absolute;					/*Posición absoluta con respecto al padre*/
+	background-color: #3b5998;	 		/*Color de la letra*/
+	border-radius: 0px 0px 0px 0px;
+}
+
+/*Séptimo cuadrado*/
+.siete{
+	top: 35px;							/*Posición desde arriba hasta abajo. En este caso se puso negativo para que cupiera en el cuadrado*/
+	left: 90px;							/*Posición desde la izquierda hasta la derecha*/
+	width: 35px; 						/*Ancho de la pieza*/
+	height: 35px; 						/*Altura de la pieza*/
+	position: absolute;					/*Posición absoluta con respecto al padre*/
+	background-color: #3b5998;	 		/*Color de la letra*/
+	border-radius: 250px 0px 0px 0px;	/*Bordes del cuadrado*/
+}
+
+/*Octavo cuadrado*/
+.ocho{
+	top: 35px;							/*Posición desde arriba hasta abajo. En este caso se puso negativo para que cupiera en el cuadrado*/
+	left: 125px;							/*Posición desde la izquierda hasta la derecha*/
+	width: 28px; 						/*Ancho de la pieza*/
+	height: 30px; 						/*Altura de la pieza*/
+	position: absolute;					/*Posición absoluta con respecto al padre*/
+	background-color: #3b5998;	 		/*Color de la letra*/
+}
